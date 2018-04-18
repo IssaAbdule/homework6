@@ -1,3 +1,7 @@
+//Name: Issa Ahmed Abdule
+//Course#: CS3377.005
+//Email: iaa170130@utdallas.edu
+
 #include <iostream>
 using namespace std;
 
