@@ -6,7 +6,7 @@ PROJECTNAME = CS3376.502.Program_5
 
 #Settings for gcc
 CXX = g++
-CFLAGS = -Wall -c
+CFLAGS = -std=c++11  -Wall -c
 LFLAGS = -Wall
 #Name of Executable
 SRC = cdk.cc
