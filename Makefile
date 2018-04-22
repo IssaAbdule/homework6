@@ -9,13 +9,13 @@ CXX = g++
 CFLAGS = -Wall -c
 LFLAGS = -Wall
 #Name of Executable
-SRC = hello-world.cc
-EXECNAME = hello-world
+SRC = cdk.cc
+EXECNAME = cdk
 OBJECTS = $(SRC:cc=o)
 
 
 #List of Objects need to create executable
-OBJS = hello-world.o
+OBJS = cdk.o
 
 #Location of libraries to link in
 LDFLAGS = -L/scratch/perkins/lib    
@@ -28,8 +28,8 @@ all: $(EXECNAME) clean
 $(EXECNAME): $(OBJS)
 	$(CXX) -o $(EXECNAME) $(LFLAGS) $(OBJS) $(LDFLAGS) $(LDLIBS) 
 
-hello-world.o: hello-world.cc
-	$(CXX) $(CFLAGS) hello-world.cc $(CLIBS) -o $@
+cdk.o: cdk.cc
+	$(CXX) $(CFLAGS) cdk.cc $(CLIBS) -o $@
 
 
 clean:
